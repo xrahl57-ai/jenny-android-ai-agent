@@ -1,7 +1,7 @@
 [project]
-name = "jenny"
+name = "kyĺan"
 version = "0.10.0"
-description = "Jenny - AI agent framework (fork of nanobot)"
+description = "Kyĺan - AI agent framework (fork of nanobot)"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.11"
 license = {text = "AGPL-3.0-only"}
@@ -47,22 +47,22 @@ allow-direct-references = true
 
 [tool.hatch.build]
 include = [
-    "jenny/**/*.py",
-    "jenny/templates/**/*.md",
-    "jenny/skills/**/*.md",
-    "jenny/skills/**/*.py",
-    "jenny/templates/ui/**/*",
+    "kyĺan/**/*.py",
+    "kyĺan/templates/**/*.md",
+    "kyĺan/skills/**/*.md",
+    "kyĺan/skills/**/*.py",
+    "kyĺan/templates/ui/**/*",
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["jenny"]
+packages = ["kyĺan"]
 
 [tool.hatch.build.targets.wheel.sources]
-"jenny" = "jenny"
+"kyĺan" = "kyĺan"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "jenny/",
+    "kyĺan/",
     "README.md",
     "LICENSE",
     "THIRD_PARTY_NOTICES.md",
@@ -92,7 +92,7 @@ testpaths = ["tests"]
 addopts = ["--strict-markers", "--strict-config"]
 
 [tool.coverage.run]
-source = ["jenny"]
+source = ["kyĺan"]
 omit = ["tests/*", "**/tests/*"]
 
 [tool.coverage.report]
